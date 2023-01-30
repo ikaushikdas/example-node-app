@@ -48,7 +48,7 @@ pipeline {
            
             steps{
                     //sh 'docker rmi -f 116361412831.dkr.ecr.ap-south-1.amazonaws.com/node-app:latest'
-                    sh 'docker rmi -f example-node-app:$BUILD_NUMBER'
+                    sh 'docker rmi -f ikaushik96/example-node-app:$BUILD_NUMBER'
 
                 } 
 
