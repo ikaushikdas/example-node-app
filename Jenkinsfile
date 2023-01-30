@@ -11,16 +11,16 @@ pipeline {
                 git 'https://github.com/ikaushikdas/example-node-app.git'
             }
         }
-        stage('Build Docker Image'){
+        // stage('Build Docker Image'){
            
-            steps{
-                script {
-                dockerImage = docker.build("example-node-app:${BUILD_NUMBER}")  
-                //dockerImage = docker.build("examplenode-app:latest")    
-                }  
+        //     steps{
+        //         script {
+        //         dockerImage = docker.build("example-node-app:${BUILD_NUMBER}")  
+        //         //dockerImage = docker.build("examplenode-app:latest")    
+        //         }  
 
-            }
-        }
+        //     }
+        // }
         stage('Build Docker Image'){
            
             steps{
