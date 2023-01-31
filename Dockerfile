@@ -1,4 +1,4 @@
-FROM node:12.14.1-alpine
+FROM node:19-alpine3.16
 WORKDIR /app
 #RUN chmod -R ug+rw app
 COPY package-lock.json /app
